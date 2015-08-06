@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <style type="text/css">
+
+      body {
+        font-family: helvetica; color: #959595;
+      }
+      a:link,a:visited,a:hover {text-decoration: none;}
+
+      .wrapper {
+        max-width: 920px; margin: 0 auto;
+        padding: 0 20px;
+      }
+      .intro {
+        text-align: center; margin-bottom: 36px;
+      }
+      h1 {margin-top: 0; margin-bottom: 3px; color: #144A6B;}
+      h3 {margin-top: 0; margin-bottom: 3px; color: #144A6B;}
+      h5 {margin: 0; color: #144A6B;}
+      h2{text-align: center;}
+
+
+      .project {margin-bottom: 48px; padding-bottom: 24px; border-bottom: 1px solid #ddd;}
+      .project h2 {text-decoration: none; color: #217CB5;}
+      .images {display: block;}
+      .images .image { float: left;}
+      .image img {width: 100%; outline: 1px solid #ddd; height: 100%;}
+      .images .big {width: 48%; padding: 1%; height: 300px;}
+      .images .small {width: 23%; padding: 1%; height: 141px;}
+
+      .project:hover h2 {color: #144A6B;}
+      .project:hover .image img {outline-color: #217CB5;}
+
+      .desc li {
+        margin-bottom: 12px; line-height: 1.3em;
+      }
+
+
+
+
+   </style>
+
+
+<script src="http://d3js.org/queue.v1.min.js"></script>
+<script src="http://d3js.org/d3.v3.js"></script>
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="intro">
+      <h1>Aditya Kaul</h1>
+      <h3>Data Science &amp; Analytics</h3>
+      <h5>University of Washington</h5>
+    </div>
+
+    <section class="project">
+      <a class="images" href="http://cse512-15s.github.io/fp-jbare-kaul10-lizehang-nanand/">
+        <h2>Visualizing the Statewide Impact of a Revenue - Neutral Carbon Tax</h2>
+        <div id="parent">
+            <div class="image big"><img src="1.png"></div>
+            <div class="image small"><img src="2.png"></div>
+            <div class="image small"><img src="3.png"></div>
+            <div class="image small"><img src="4.png"></div>
+            <div class="image small"><img src="5.png"></div>
+            <div style="clear:both"></div>
+        </div>
+      </a>
+
+      <div class="desc">
+        <ul>
+          <li> Created a visualization in D3 to view the impact of a proposed carbon tax policy for the state of Washington</li>
+          <li> Created an interactive map for the state of Washington segregated by different counties</li>
+          <li> Enabled the zoom feature on the map to ensure that the user could view the smaller counties easily and enhanced interactivity</li>
+          <li> Implemented a tool tip to give the user additional information on hovering over the map, histogram or the bubble chart</li>
+          <li> Used color encoding to indicate how different counties would be financially affected with change in household financial impact variable</li>
+          <li> Created a histogram to represent the financial change in sampled households for a selected household financial impact variable</li>
+          <li> Implemented interactivity between the map and histogram to represent the financial change for the selected county on the map</li>
+          <li> Introduced filtering via brushing technique to provide more relevant data to users interested in specific details from the map and histogram</li>
+          <li> Implemented a bubble chart that gave the financial change for all the variables as well as a break down by income or area</li>
+        </ul>
+      </div>
+    </section>
+
+
+<section class="project">
+      <a class="images" href="http://kaul10.github.io/NYC-Obese-Population">
+        <h2>Predicted Increase in Obese Population in New York City</h2>
+        <div id="parent">
+            <div class="image big"><img src="12.png"></div>
+            <div class="image small"><img src="13.png"></div>
+            <div class="image small"><img src="14.png"></div>
+            <div class="image small"><img src="15.png"></div>
+            <div class="image small"><img src="15a.png"></div>
+            <div style="clear:both"></div>
+        </div>
+      </a>
+
+      <div class="desc">
+        <ul>
+          <li> Performed predictive analysis to generate a linear regression model in order to understand the trend of obese population in NYC from 2008 to 2040</li>
+<li> Created a D3 visualization to show the increase in the total population and obese population with each passing year using a slider</li>
+<li> Created a map for the city of NYC showing the five boroughs</li>
+<li> Implemented the zoom and drag feature on the map to enable the user to zoom into a specific borough or drag a specific borough into the view</li>
+<li> Created two bubble charts to show the change in population in each borough</li>
+<li> The two bubble charts increase/decrease in size with the increase/decrease in population which is in turn controlled by the slider</li>
+<li> Implemented color encoding to ensure that the user finds it easy to relate the boroughs on the map to the appropriate bubbles on the bubble charts</li>
+<li> Created a Tableau dashboard to support above concept of increase in obese and total population in New York City from 2008 to 2040</li>
+<li> Created a Tableau dashboard to show the 10 major causes of death in the United States wherein four of these diseases were more likely to be caused by obesity</li></ul>
+      </div>
+    </section>
+
+
+<section class="project">
+      <a class="images" href="https://public.tableau.com/profile/aditya.kaul#!/vizhome/PlayerPerformancesofTopEuropeanLeaguesSeason2014-15/Dashboard2">
+        <h2>Goals and Assists of Players in Top European Domestic Leagues</h2>
+        <div id="parent">
+            <div class="image big"><img src="16.png"></div>
+            <div class="image small"><img src="17.png"></div>
+            <div class="image small"><img src="17a.png"></div>
+            <div class="image small"><img src="17b.png"></div>
+            <div class="image small"><img src="18.png"></div>
+            <div style="clear:both"></div>
+        </div>
+      </a>
+
+      <div class="desc">
+        <ul>
+           <li> Created a Tableau dashboard to visualize the attacking statistics of players in the top four european leagues namely - English Premier League, La Liga, Bundesliga and Serie A</li>
+<li> Enables the user to analyze the performance of players to find out the top attacking players and their strengths such as assists, goals or both</li>
+<li> Players from different leagues are color encoded to compare performance of players in the different leagues</li>
+<li> Drill down ability provided through which players of any number of leagues can be visualized</li>
+<li> Through parameter control, the number of assists can be changed to produce detailed information about a specific group of players</li>
+<li> Size of the bubbles helps us differentiate between players with differnt assists</li>
+<li> By leveraging a tool tip the user can obtain more information about a specific player</li>
+<li> The highlighting feature is active which enables the user to selectively view only a specific set of players in order to delve deep into the analysis</li></ul>
+      </div>
+    </section>
+
+
+<section class="project">
+      <a class="images" href="http://kaul10.github.io/EPL-Team-Statistics-All-Teams/">
+        <h2>Visualizing Team Statistics in the Barclays Premier League for 2014-2015</h2>
+        <div id="parent">
+            <div class="image big"><img src="7.png"></div>
+            <div class="image small"><img src="8.png"></div>
+            <div class="image small"><img src="8a.png"></div>
+            <div class="image small"><img src="8b.png"></div>
+            <div class="image small"><img src="9.png"></div>
+            <div style="clear:both"></div>
+        </div>
+      </a>
+
+      <div class="desc">
+        <ul>
+         <li> Created a visualization in D3 to view the performance and statistics of all the teams in the premier league for the season 2014-2015</li>
+<li> Important statistics such as Total Points, Matches Won, Matches Lost, Goals Scored, Goals Conceded were visualized via a bar chart</li>
+<li> To further aid the user, a tooltip has been added which displays all the statistics as well as the team name and emblem for easy reference</li>
+<li> A color legend was used to display the top teams that made it into next years Champions League, the teams that survived relegation but performed ordinarily and the teams that have been relegated to the first division league</li>
+<li> By clicking the buttons to view the different statistics a smooth transitioning has been implemented to make the visualization more appealing to the user</li></ul>
+      </div>
+    </section>
+
+
+<section class="project">
+      <a class="images" href="http://kaul10.github.io/EPL-Team-Form-Meter/">
+        <h2>English Premier League Form Meter</h2>
+        <div id="parent">
+            <div class="image big"><img src="10.png"></div>
+            <div class="image small"><img src="10a.png"></div>
+            <div class="image small"><img src="10b.png"></div>
+            <div class="image small"><img src="10c.png"></div>
+            <div class="image small"><img src="11.png"></div>
+            <div style="clear:both"></div>
+        </div>
+      </a>
+
+      <div class="desc">
+        <ul>
+         <li> Created a visualization in D3 to view the form of all the teams in the Barclay's Premier League for the seasons 2013-2014 and 2014-2015</li>
+<li> The visualization shares a multi series line chart where each line is used to represent a different team</li>
+<li> The spikes in the line chart indicate the position of the team after each game week among the twenty contenders</li>
+<li> The user can use the position of the teams after each gameweek or for a certain month to visualize the form and how the team fared over the entire season</li>
+<li> In order to track the performance of a single team the user can hover over the line chart of desired team to view the performance after each match in the selected season</li>
+<li> On clicking the selected team line we remove it from the foreground and can consider the teams that have their forms represented by darker lines</li>
+</ul>
+      </div>
+    </section>
+
+
+
+  </div><!--wrapper-->
+
+
+
+
+</div>
+</li>
+</body>
+
+</html>
